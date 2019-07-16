@@ -4,6 +4,7 @@
   "description": "Javascript examples of common programming questions ",
   "main": "index.js",
   "scripts": {
+    "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/justin-dunham/javascript-examples#readme",
   "devDependencies": {
+    "coveralls": "^3.0.5",
     "jest": "^24.8.0"
   }
 }
