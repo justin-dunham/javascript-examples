@@ -1,0 +1,27 @@
+{
+  "name": "javascript-examples",
+  "version": "1.0.0",
+  "description": "Javascript examples of common programming questions ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justin-dunham/javascript-examples.git"
+  },
+  "keywords": [
+    "code",
+    "examples"
+  ],
+  "author": "Justin Dunham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justin-dunham/javascript-examples/issues"
+  },
+  "homepage": "https://github.com/justin-dunham/javascript-examples#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}

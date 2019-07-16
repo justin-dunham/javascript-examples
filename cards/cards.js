@@ -16,4 +16,6 @@ const cards = suits.reduce((accumulator, suit) => {
   ];
 }, []);
 
-console.log([...cards].sort(shuffle), cards.length);
+exports.cards = cards;
+exports.shuffle = shuffle;
+exports.shuffledCards = () => [...cards].sort(shuffle);
