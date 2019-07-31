@@ -2,11 +2,13 @@ const {cards, shuffledCards, shuffle} = require('./cards');
 
 // Updated test case with a Link to a different address
 describe('Cards', () => {
-    //
-    it('generates full deck', () => {
+    it('playing with a full deck', () => {
         // sanity check
         expect(cards.length).toBe(52);
-        // should always generate the same result
+    });
+
+    //
+    it('generates consistent deck', () => {
         expect(JSON.stringify(cards)).toMatchSnapshot();
     });
 
@@ -24,5 +26,4 @@ describe('Cards', () => {
         expect(JSON.stringify(cards.sort()))
         .toBe(JSON.stringify(cards.sort(shuffle).sort()));
     });
-
 });
